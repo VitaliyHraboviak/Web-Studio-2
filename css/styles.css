@@ -149,7 +149,7 @@ body {
 
 }
 .effective-solutions {
-  background-color: #000000;
+  background: #2E2F42;
   width: 1440px;
   left: 0px;
   top: 72px;
@@ -166,7 +166,6 @@ body {
   width: 500px;
   padding-top: 192px;
   color: #ffffff;
-  border: 1px solid #000000;
   text-align: center;
   display: flex;
   margin-top: 0px;
