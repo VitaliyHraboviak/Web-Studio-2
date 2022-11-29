@@ -8,12 +8,19 @@ html {
 :root {
   --card-set-gap: 24px;
   --brand-color: #4d5ae5;
-  --brand-color 
+  --brand-color-black: #2e2f42;
+--brand-color-white: #f8f8f8;
+--brand-color-black-text: #434455;
+--brand-color-white-text:#ffffff;
+--brand-color-white-background:#ffffff;
+--brand-color-white-background-color:#f4f4fd;
+--brand-color-blue: #404bbf;
+--brand-color-black-1: #000000;
+--brand-color-white-2: #e7e9fc;
 }
 body {
-  font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
-  color: #000000;
+  color: var(--brand-color-black-1);
   width: 1440px;
   margin: 0 auto;
 }
@@ -31,10 +38,18 @@ body {
 }
 .list{
   list-style: none;
+  padding-left: 0;
+  width: 586px;
+  gap: 24px;
+  display: flex;
+  margin-top: 101px;
+  margin-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .beginning {
   display: flex;
-  background-color: #f8f8f8;
+  background-color: var(--brand-color-white);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   width: 1440px;
@@ -45,7 +60,7 @@ body {
 .menu {
   display: flex;
   flex-direction: row;
-  color: #2e2f42;
+  color:var(--brand-color-black);
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
@@ -74,7 +89,7 @@ body {
 }
 
 .menu .link {
-  color: #2e2f42;
+  color:var(--brand-color-black);
   text-decoration: none;
 }
 
@@ -87,7 +102,7 @@ body {
   align-items: flex-start;
   padding: 0px;
   position: absolute;
-  color: #2e2f42;
+  color: var(--brand-color-black);
   width: 115px;
   left: 156px;
   top: 24px;
@@ -113,7 +128,7 @@ body {
   left: 940px;
   top: 24px;
   letter-spacing: 0.02em;
-  color:#434455;
+  color:var(--brand-color-black-text);
   text-decoration: none;
 }
 .infodevstudio:hover,
@@ -138,10 +153,10 @@ body {
   left: 1133px;
   top: 24px;
   letter-spacing: 0.02em;
-  color: #434455;
+  color:var(--brand-color-black-text);
   text-decoration: none;
 }
-.main {
+.nemi {
   display: block;
   margin: auto;
   width: 1440px;
@@ -149,12 +164,12 @@ body {
 
 }
 .effective-solutions {
-  background: #2E2F42;
+  background: var(--brand-color-black);
   width: 1440px;
   left: 0px;
   top: 72px;
   margin-top: 0px;
-  border: 1px solid #000000;
+  border: 1px solid var(--brand-color-black-1);
 }
 .effective-solutions-title {
   font-family: "Roboto";
@@ -165,7 +180,7 @@ body {
   letter-spacing: 0.02em;
   width: 500px;
   padding-top: 192px;
-  color: #ffffff;
+  color: var(--brand-color-white-text);
   text-align: center;
   display: flex;
   margin-top: 0px;
@@ -183,18 +198,18 @@ body {
   margin-left: auto;
   margin-right: auto;
   background:var(--brand-color);
-  border: 1px solid #000000;
+  border: 1px solid var(--brand-color-black-1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-bottom: 192px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--brand-color-white-text);
   width: 170px;
 }
 button .link:click {
-  color: #404bbf;
+  color: var(--brand-color-blue);
 }
 button .link:hover {
   color: var(--brand-color);
@@ -210,16 +225,16 @@ button .link:default {
   width: 1128px;
   gap: 24px;
   padding-left: 0;
-  margin-top: 120px;
+  margin-top: 72px;
+  margin-bottom: 0;
 }
-.text-strategy .text-foto-port{
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
+.text-strategy, .text-foto-port{
+  
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2E2F42;
+  color: var(--brand-color-black);
+  margin-left: 16px;
 }
 
 .card-set > .straegy,
@@ -247,7 +262,7 @@ button .link:default {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--brand-color-black-text);
 }
 
 .ourprinciples-title {
@@ -273,7 +288,7 @@ button .link:default {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2E2F42;
+  color: var(--brand-color-black);
   
 }
 .auto-layout {
@@ -284,12 +299,12 @@ button .link:default {
 }
 .our-team {
   display: block;
-  background-color: #f4f4fd;
+  background-color: var(--brand-color-white-background-color);
   width: 1440px;
   left: 0px;
   top: 1551px;
-  border: 1px solid #000000;
   margin-top: 107px;
+  padding-top: 120px;
 }
 .our-team-title {
   
@@ -301,10 +316,10 @@ button .link:default {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
-  margin: 120px 630px 170px 630px;
+  color: var(--brand-color-black);
+  margin-top: 120px;
 }
-.conteyner {
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 1440px;
@@ -318,7 +333,7 @@ button .link:default {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #2E2F42;
+  color: var(--brand-color-black);
   margin-top: 32px;
   margin-bottom: 0;
 }
@@ -330,7 +345,7 @@ button .link:default {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #434455;
+  color:var(--brand-color-black-text);
   margin-top: 8px;
 }
 .item {
@@ -343,7 +358,7 @@ button .link:default {
   height: 380px;
   left: 156px;
   top: 1783px;
-  background: #ffffff;
+  background:var(--brand-color-white-background);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -351,31 +366,32 @@ button .link:default {
   margin-bottom: 120px;
 }
 .foto {
-  border: 1px solid #000000;
+ 
 }
 
 .lowerpart {
-  background: #2e2f42;
-  border: 1px solid #000000;
+  background: var(--brand-color-black);
+  border: 1px solid var(--brand-color-black-1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 1440px;
 }
 .lowerpart-block {
   display: block;
-  color: #f4f4fd;
+  color: var(--brand-color-white-background-color);
   width: 264px;
   margin-left: 156px;
   margin-top: 100px;
   text-decoration: none;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height:1,16;
 }
 
 .lowerpart-item {
   color: var(--brand-color);
-  background-color: #000000;
-  background: #2e2f42;
-  border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
+  background: var(--brand-color-black);
 }
 
 .lowerpart-title {
@@ -386,7 +402,7 @@ button .link:default {
   line-height: 1.5;
   letter-spacing: 0.02em;
   display: block;
-  color: #e7e9fc;
+  color: var(--brand-color-white-2);
   width: 264px;
   margin-left: 156px;
   margin-bottom: 100px;
@@ -401,20 +417,12 @@ button .link:default {
   padding-bottom: 120px;
 
 }
-.button-item{
-  width: 586px;
-  gap: 24px;
-  display: flex;
-  margin-top: 101px;
-  margin-bottom: 64px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .block-button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: #F4F4FD;
+  background: var(--brand-color-white-background-color);
 }
 .button-portfolio {
   font-family: "Roboto";
@@ -428,9 +436,9 @@ button .link:default {
   letter-spacing: 0.04em;
   margin-left: auto;
   margin-right: auto;
-  background: #F4F4FD;
+  background: var(--brand-color-white-background-color);
   color:var(--brand-color);
-  border: 1px solid #E7E9FC;
+  border: 1px solid var(--brand-color-white-2);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
   border-radius: 4px;
@@ -443,7 +451,7 @@ button .link:default {
 .button-portfolio:focus {
   cursor: pointer;
   background: var(--brand-color);
-  color: #FFFFFF;
+  color: var(--brand-color-white-text);
 }
 .many {
   width: 1128px;
@@ -460,11 +468,11 @@ button .link:default {
   box-sizing: border-box;
   width: 360px;
   height: 420px;
-  margin: 0 24px 50px;
+  margin: 0 12px 50px;
   left: 156px;
   top: 285px;
-  background: #FFFFFF;
-  border: 0.5px solid #F4F4FD;
+  background: var(--brand-color-white-background);
+  border: 0.5px solid var(--brand-color-white-background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .fototext-title {
@@ -486,6 +494,10 @@ button .link:default {
 .cashless-payment {
   width: 360px;
   margin-top: 190px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-color-black);
 }
 .text-title {
   width: 296px;
@@ -495,7 +507,7 @@ button .link:default {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--brand-color-white-background-color);
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
@@ -521,13 +533,11 @@ button .link:default {
 }
 
 .text-port{
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--brand-color-black-text);
+  margin-left: 16px;
 }
 .foto-portfolio{
   width: 360px;
